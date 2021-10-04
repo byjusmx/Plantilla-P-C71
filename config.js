@@ -2,7 +2,7 @@ import firebase from 'firebase'
 require("@firebase/firestore")
 
 const firebaseConfig = {
- //Add configuration here
+ //Agrega la configuración aquí
  
 };
   firebase.initializeApp(firebaseConfig);
