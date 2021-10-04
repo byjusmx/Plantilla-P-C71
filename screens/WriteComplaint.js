@@ -35,12 +35,12 @@ export default class WriteComplaint extends React.Component {
                 <Header 
                     backgroundColor = {'#E63946'}
                      centerComponent = {{
-                        text : 'Complaint Forum',
+                        text : 'Foro de quejas',
                         style : { color: 'black', fontSize: 20,fontWeight:'bold'}
                     }}
                 />
                 <TextInput 
-                    placeholder="Title"
+                    placeholder="Título"
                     placeholderTextColor='black'
                     onChangeText= {(text)=>{
                         this.setState({
@@ -50,7 +50,7 @@ export default class WriteComplaint extends React.Component {
                     value={this.state.title}
                     style={styles.title}/>
                 <TextInput
-                    placeholder="Student Name"
+                    placeholder="Nombre del alumno"
                     placeholderTextColor='black'
                     onChangeText= {(text)=>{
                         this.setState({
@@ -60,7 +60,7 @@ export default class WriteComplaint extends React.Component {
                     value={this.state.student}
                     style={styles.author} />
                 <TextInput 
-                    placeholder="Your Complaint/Query"
+                    placeholder="Tu queja/solicitu"
                     placeholderTextColor='black'
                     onChangeText= {(text)=>{
                         this.setState({
@@ -75,7 +75,7 @@ export default class WriteComplaint extends React.Component {
                     style={styles.submitButton}
                    onPress = {this.submitQuery}
                    >
-                    <Text style={styles.buttonText}>Submit</Text>
+                    <Text style={styles.buttonText}>Enviar</Text>
                 </TouchableOpacity>
             </View>
         );
